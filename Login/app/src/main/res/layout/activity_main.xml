@@ -1,0 +1,71 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/rlayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:background="#3333ff">
+        <TextView
+            android:id="@+id/txtView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/txtSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and you can discover best news around the world"
+            android:textSize="17dp"
+            android:textColor="#fff"
+
+            android:layout_below="@id/txtView1"
+            />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/rlayoutHeader"
+    android:layout_margin="30dp"
+    >
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="70dp"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmail"
+        android:hint="Password (optional)"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp" />
+    <CheckBox
+        android:id="@+id/cbRemember"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edtPass"
+        android:text="Remember me"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbRemember"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:background="@drawable/pinkbutton"
+        android:layout_marginTop="20dp"
+        android:text="LOGIN" />
+</RelativeLayout>
+
+</RelativeLayout>
